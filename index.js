@@ -9,7 +9,19 @@ axios.get('https://swapi.dev/api/starships/')
     const randomStarship = getRandomElement(allStarshipData); 
     
     console.log(randomStarship);
-    console.log('name:' + randomStarship.name);
+    console.log('\n');
+    console.log('Name:' + randomStarship.name);
+    console.log('Model:' + randomStarship.model);
+    console.log('Manufactured by:' + randomStarship.manufacturer);
+    console.log('Suggested Cost(Credits):' + randomStarship.cost_in_credits);
+    console.log('Length(Meters):' + randomStarship.length);
+    console.log('Max Atmosphering Speed:' + randomStarship.max_atmosphering_speed);
+    console.log('Suggested Crew Amount:' + randomStarship.crew);
+    console.log('Max Passenger Capacity:' + randomStarship.passengers);
+    console.log('Max Cargo Capacity:' + randomStarship.cargo_capacity);
+    console.log('Hyperdrive Rating:' + randomStarship.hyperdrive_rating);
+    console.log('Class:' + randomStarship.starship_class);
+    console.log('Pilots:' + randomStarship.pilots);
 
     // Use expect.js to assert the status code
     expect(response.status).to.be(200);
